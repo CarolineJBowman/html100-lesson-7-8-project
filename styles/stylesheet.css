@@ -18,13 +18,11 @@ header, footer {
   grid-column: 1 / 4;
   height: 150px;
   background: lightgray;
-  font-size: 1.5rem;
 }
 
 article {
   grid-column: 2 / 3;
   background: white;
-  font-size: 1rem;
   padding: 10px;
   display: block;
   overflow: auto;
@@ -40,4 +38,13 @@ header, footer {
 video {
   margin: 0;
   padding: 0;
+}
+
+video::cue {
+  background-image: linear-gradient(to bottom, dimgray, lightgray);
+  color: papayawhip;
+}
+
+video::cue(b) {
+  color: peachpuff;
 }
